@@ -27,8 +27,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {movies.map(movie, index => {
-          return (<Movie title={movie.title} poster={movie.poster} key={index}/>)
+        {movies.map((movie,index) => { //인자가 2개이니까 괄호로 인자를 묶어줌!
+          return <Movie title={movie.title} poster={movie.poster} key={index} />
         })}
       </div>
       
